@@ -14,16 +14,50 @@ body {
   min-height: 100vh;
 }
 
+header nav {
+  background: transparent;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul div:last-child{
+  display: flex;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  display: block;
+  text-decoration: none;
+  color:  #fdfdfd;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+header nav ul li a:hover {
+  background:  #fdfdfd;
+  color: #000;
+}
+
+
+
 /* About Page */
 .about-section{
-    background: url(https://fadzrinmadu.github.io/hosted-assets/responsive-about-us-section-using-html/pic.jpg) no-repeat left;
+    background: url("/img/_lara.jpg") no-repeat left;
     background-size: 55%;
     background-color: #fdfdfd;
     overflow: hidden;
     padding: 100px 0;
 }
 
-.inner-container{
+.inner-container {
     width: 55%;
     float: right;
     background-color: #fdfdfd;
@@ -167,11 +201,6 @@ body {
 }
 
 /* Registration Page */
-/* body {
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 14px;
-    background: #f2f2f2;
-  } */
   
   .clearfix:after {
     content: "";
@@ -647,4 +676,8 @@ body {
     margin: 0 auto;
   }
   
-  
+  footer {
+    color: #fdfdfd;
+    text-align: center;
+    margin: 50px;
+  }
