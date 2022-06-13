@@ -18,6 +18,7 @@ header nav {
   background: transparent;
   height: auto;
   margin-bottom: 30px;
+  box-shadow:0px 0px 10px -2px rgba(0,0,0,0.75);
 }
 
 header nav ul {
@@ -44,13 +45,32 @@ header nav ul li a {
 header nav ul li a:hover {
   background:  #fdfdfd;
   color: #000;
+  text-decoration: none;
 }
 
-
+.btn {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: none;
+  background-color: #328f8a;
+  background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+  width: 100%;
+  border: none;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
 
 /* About Page */
 .about-section{
-    background: url("/img/_lara.jpg") no-repeat left;
+    background: url("/img/lara.jpg") no-repeat left;
     background-size: 55%;
     background-color: #fdfdfd;
     overflow: hidden;
@@ -112,94 +132,95 @@ header nav ul li a:hover {
 
 /* Contact Page */
 .contact-parent{
-    background: #fff;
-    display:flex;
-    margin:80px 0;
+  background: #fff;
+  display:flex;
+  margin:80px 0;
 }
 .contact-child{
-    display:flex;
-    flex:1;
-    box-shadow:0px 0px 10px -2px rgba(0,0,0,0.75);
+  display:flex;
+  flex:1;
+  box-shadow:0px 0px 10px -2px rgba(0,0,0,0.75);
 }
 .child1{
-    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://cdn.pixabay.com/photo/2019/06/28/00/17/architecture-4303279_1280.jpg");
-    background-size:cover;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-around;
-    color:#fff;
-    padding:100px 0;
+  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://cdn.pixabay.com/photo/2019/06/28/00/17/architecture-4303279_1280.jpg");
+  background-size:cover;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  color:#fff;
+  padding:100px 0;
 }
 .child1 p{
-    padding-left:20%;
-    font-size:20px;
-    text-shadow:0px 0px 2px #000;
-}
- 
-.child1 p span{
-    font-size:16px;
-    color:#9df2fd;
-}
-.child2{
-    flex-direction:column;
-    justify-content:space-around;
-    align-items:center;
-}
-.inside-contact{
-    width:90%;
-    margin:0 auto;
-}
- 
-.inside-contact h2{
-    text-transform:uppercase;
-    text-align:center;
-    margin-top:50px;
-}
- 
-.inside-contact h3{
-    text-align:center;
-    font-size:16px;
-    color:#0085e2;
-}
-.inside-contact input, .inside-contact textarea{
-    width:100%;
-    background-color:#eee;
-    border:1px solid rgba(0,0,0,0.48);
-    padding:5px 10px;
-    margin-bottom:20px;
-}
-.inside-contact input[type=submit]{
-    background-color:#000;
-    color:#fff;
-    transition:0.2s;
-    border:2px solid #000;
-    margin:30px 0;
-}
-.inside-contact input[type=submit]:hover{
-    background-color:#fff;
-    color:#000;
-    transition:0.2s;
-}
-@media screen and (max-width:991px){
-    .contact-parent{
-        display:block;
-        width:100%;
-    }
- 
-    .child1{
-        display:none;
-    }
- 
-    .child2{
-        background-image:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url("https://cdn.pixabay.com/photo/2019/06/28/00/17/architecture-4303279_1280.jpg");
-        background-size:cover;
-    }
- 
-    .inside-contact input, .inside-contact textarea{
-        background-color:#fff;
-    }
+  padding-left:20%;
+  font-size:20px;
+  text-shadow:0px 0px 2px #000;
 }
 
+.child1 p span{
+  font-size:16px;
+  color:#9df2fd;
+}
+.child2{
+  flex-direction:column;
+  justify-content:space-around;
+  align-items:center;
+}
+.inside-contact{
+  width:90%;
+  margin:0 auto;
+}
+
+.inside-contact h2{
+  text-transform:uppercase;
+  text-align:center;
+  margin-top:50px;
+}
+
+.inside-contact h3{
+  text-align:center;
+  font-size:16px;
+  color:#0085e2;
+}
+.inside-contact input, .inside-contact textarea{
+  width:100%;
+  background-color:#eee;
+  border:1px solid rgba(0,0,0,0.48);
+  padding:5px 10px;
+  margin-bottom:20px;
+}
+
+.inside-contact input[type=submit]{
+  border: none;
+  outline: none;
+  padding: 15px;
+  color: #fff;
+  background-color: #000;
+}
+.inside-contact input[type=submit]:hover{
+  background-color: #328f8a;
+  background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+  transition:0.2s;
+}
+
+@media screen and (max-width:991px){
+  .contact-parent{
+      display:block;
+      width:100%;
+  }
+
+  .child1{
+      display:none;
+  }
+
+  .child2{
+      background-image:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url("https://cdn.pixabay.com/photo/2019/06/28/00/17/architecture-4303279_1280.jpg");
+      background-size:cover;
+  }
+
+  .inside-contact input, .inside-contact textarea{
+      background-color:#fff;
+  }
+}
 /* Registration Page */
   
   .clearfix:after {
@@ -306,29 +327,13 @@ header nav ul li a:hover {
     border: 1px solid #f5ba1a;
     background: #fafafa;
   }
-  .form_wrapper input[type=submit] {
-    background: #f5ba1a;
-    height: 35px;
-    line-height: 35px;
-    width: 100%;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    color: #fff;
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
   .form_wrapper input[type=submit]:hover {
     background: #e1a70a;
   }
   .form_wrapper input[type=submit]:focus {
     background: #e1a70a;
   }
-  .form_wrapper input[type=checkbox], .form_wrapper input[type=radio] {
+  .form_wrapper input[type=radio] {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -341,52 +346,6 @@ header nav ul li a:hover {
   
   .form_container .row .col_half.last {
     border-left: 1px solid #cccccc;
-  }
-  
-  .checkbox_option label {
-    margin-right: 1em;
-    position: relative;
-  }
-  .checkbox_option label:before {
-    content: "";
-    display: inline-block;
-    width: 0.5em;
-    height: 0.5em;
-    margin-right: 0.5em;
-    vertical-align: -2px;
-    border: 2px solid #cccccc;
-    padding: 0.12em;
-    background-color: transparent;
-    background-clip: content-box;
-    transition: all 0.2s ease;
-  }
-  .checkbox_option label:after {
-    border-right: 2px solid #000000;
-    border-top: 2px solid #000000;
-    content: "";
-    height: 20px;
-    left: 2px;
-    position: absolute;
-    top: 7px;
-    transform: scaleX(-1) rotate(135deg);
-    transform-origin: left top;
-    width: 7px;
-    display: none;
-  }
-  .checkbox_option input:hover + label:before {
-    border-color: #000000;
-  }
-  .checkbox_option input:checked + label:before {
-    border-color: #000000;
-  }
-  .checkbox_option input:checked + label:after {
-    -moz-animation: check 0.8s ease 0s running;
-    -webkit-animation: check 0.8s ease 0s running;
-    animation: check 0.8s ease 0s running;
-    display: block;
-    width: 7px;
-    height: 20px;
-    border-color: #000000;
   }
   
   .radio_option label {
@@ -457,17 +416,6 @@ header nav ul li a:hover {
   
   .select_option select:hover + .select_arrow, .select_option select:focus + .select_arrow {
     border-top-color: #000000;
-  }
-  
-  .credit {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    padding: 15px;
-    color: #f5ba1a;
-  }
-  .credit a {
-    color: #e1a70a;
   }
   
   @-webkit-keyframes check {
@@ -598,22 +546,9 @@ header nav ul li a:hover {
     .form_container .row .col_half.last {
       border-left: none;
     }
-  
-    .remember_me {
-      padding-bottom: 20px;
-    }
   }
 
   /* Login Page */
-  
-  header .header{
-    background-color: #fff;
-    height: 45px;
-  }
-  header a img{
-    width: 134px;
-  margin-top: 4px;
-  }
   .login-page {
     width: 360px;
     padding: 8% 0 0;
@@ -644,21 +579,7 @@ header nav ul li a:hover {
     box-sizing: border-box;
     font-size: 14px;
   }
-  .form button {
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    outline: 0;
-    background-color: #328f8a;
-    background-image: linear-gradient(45deg,#328f8a,#08ac4b);
-    width: 100%;
-    border: 0;
-    padding: 15px;
-    color: #FFFFFF;
-    font-size: 14px;
-    -webkit-transition: all 0.3 ease;
-    transition: all 0.3 ease;
-    cursor: pointer;
-  }
+
   .form .message {
     margin: 15px 0 0;
     color: #b3b3b3;
@@ -679,5 +600,7 @@ header nav ul li a:hover {
   footer {
     color: #fdfdfd;
     text-align: center;
-    margin: 50px;
+    margin-top: 50px;
+    padding: 20px;
+    box-shadow:0px 0px 10px -2px rgba(0,0,0,0.75);
   }
