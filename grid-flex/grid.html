@@ -1,20 +1,44 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
     <title>Grid Layout Design</title>
 </head>
+
 <body>
     <header>
         <nav>
-            <span>Css Layout System</span>
+            <span><a href="#">Css Layout System</a></span>
             <ul>
-                <li>Flex Layout Design</li>
-                <li>Grid Layout Design</li>
+                <li><a href="index.html">Flex Layout Design</a></li>
+                <li><a href="grid.html" class="active">Grid Layout Design</a></li>
             </ul>
         </nav>
     </header>
-    
+
+    <main>
+        <div class="grid-container">
+            <div class="top-boxes">
+                <div class="red-box"></div>
+                <div class="orange-box"></div>
+            </div>
+            <div class="bottom-boxes">
+                <div class="green-box"></div>
+                <div class="blue-box">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
