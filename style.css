@@ -14,6 +14,11 @@ body {
   min-height: 100vh;
 }
 
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
 header nav {
   background: transparent;
   height: auto;
@@ -75,6 +80,15 @@ header nav ul li a:hover {
     background-color: #fdfdfd;
     overflow: hidden;
     padding: 100px 0;
+}
+
+.about-section .hobbies, .about-section .priorities{
+    margin: 20px 0;
+}
+
+
+.about-section .contact-btn{
+    margin-top: 50px;
 }
 
 .inner-container {
@@ -305,7 +319,7 @@ header nav ul li a:hover {
   .form_wrapper .textarea_field > span > i {
     padding-top: 10px;
   }
-  .form_wrapper input[type=text], .form_wrapper input[type=email], .form_wrapper input[type=password] {
+  .form_wrapper input[type=text], .form_wrapper input[type=email], .form_wrapper input[type=number], .form_wrapper input[type=password] {
     width: 100%;
     padding: 8px 10px 9px 35px;
     height: 35px;
@@ -317,10 +331,10 @@ header nav ul li a:hover {
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  .form_wrapper input[type=text]:hover, .form_wrapper input[type=email]:hover, .form_wrapper input[type=password]:hover {
+  .form_wrapper input[type=text]:hover, .form_wrapper input[type=number]:hover, .form_wrapper input[type=email]:hover, .form_wrapper input[type=password]:hover {
     background: #fafafa;
   }
-  .form_wrapper input[type=text]:focus, .form_wrapper input[type=email]:focus, .form_wrapper input[type=password]:focus {
+  .form_wrapper input[type=text]:focus, .form_wrapper input[type=number]:focus, .form_wrapper input[type=email]:focus, .form_wrapper input[type=password]:focus {
     -webkit-box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
     -moz-box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
     box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
@@ -347,32 +361,18 @@ header nav ul li a:hover {
   .form_container .row .col_half.last {
     border-left: 1px solid #cccccc;
   }
-  
-  .radio_option label {
-    margin-right: 1em;
+
+  .form_container .message {
+    text-align: center;
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
   }
-  .radio_option label:before {
-    content: "";
-    display: inline-block;
-    width: 0.5em;
-    height: 0.5em;
-    margin-right: 0.5em;
-    border-radius: 100%;
-    vertical-align: -3px;
-    border: 2px solid #cccccc;
-    padding: 0.15em;
-    background-color: transparent;
-    background-clip: content-box;
-    transition: all 0.2s ease;
+  .form_container .message a {
+    color: #4CAF50;
+    text-decoration: none;
   }
-  .radio_option input:hover + label:before {
-    border-color: #000000;
-  }
-  .radio_option input:checked + label:before {
-    background-color: #000000;
-    border-color: #000000;
-  }
-  
+
   .select_option {
     position: relative;
     width: 100%;
