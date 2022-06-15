@@ -31,6 +31,11 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: var(--font-size);
+    font-family: var(--lexend-deca);
+}
+
 a {
     display: inline-block;
     padding: 1rem;
@@ -66,8 +71,7 @@ header nav ul {
 /* Flex Design Styles */
 
 .flex-body {
-    font-size: var(--font-size);
-    font-family: var(--lexend-deca);
+    background-color: var(--very-light-gray);
 }
 
 .flex-container {
