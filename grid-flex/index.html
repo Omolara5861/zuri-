@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +16,7 @@
     <title>Flexbox Layout Design</title>
 </head>
 
-<body>
+<body class="flex-body">
     <header>
         <nav>
             <span><a href="#">Css Layout System</a></span>
@@ -25,10 +27,25 @@
         </nav>
     </header>
     <main>
-        <div class="cards">
-            <div class="orange-card"></div>
-            <div class="dark-cyan-card"></div>
-            <div class="very-dark-cyan-card"></div>
+        <div class="flex-container">
+            <div class="cards orange-card">
+                <img src="images/icon-sedans.svg" alt="Sedan Image">
+                <h2>Sedans</h2>
+                <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+                <button class="btn">learn more</button>
+            </div>
+            <div class="cards dark-cyan-card">
+                <img src="images/icon-suvs.svg" alt="Suv Image">
+                <h2>Suvs</h2>
+                <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and your off-road adventures.</p>
+                <button class="btn">learn more</button>
+            </div>
+            <div class="cards very-dark-cyan-card">
+                <img src="images/icon-luxury.svg" alt="Luxury Image">
+                <h2>Luxury</h2>
+                <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
+                <button class="btn">learn more</button>
+            </div>
         </div>
     </main>
 </body>

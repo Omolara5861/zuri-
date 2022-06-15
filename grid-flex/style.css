@@ -23,24 +23,12 @@
     /* Font Family */
     --lexend-deca: 'Lexend Deca', sans-serif;
     --shoulders-display: 'Big Shoulders Display', cursive;
-/* 
-Transparent white (paragraphs): 
-Very light gray (background, headings, buttons):  */
 }
 /* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-size: var(--font-size);
-    font-family: var(--lexend-deca);
-}
-
-h1,h2,h3,h4,h5,h6 {
-    font-family: var(--shoulders-display);
 }
 
 a {
@@ -73,6 +61,74 @@ header nav span {
 header nav ul {
     display: flex;
     list-style-type: none;
+}
+
+/* Flex Design Styles */
+
+.flex-body {
+    font-size: var(--font-size);
+    font-family: var(--lexend-deca);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cards {
+    padding: 15px;
+}
+
+.cards h2 {
+    font-family: var(--shoulders-display);
+    margin: 10px 0;
+    color: var(--very-light-gray);
+    text-transform: uppercase;
+}
+
+.cards p {
+    color: var(--transparent-white);
+    line-height: 15px;
+    margin: 10px 0;
+}
+
+.cards .btn {
+    text-transform: capitalize;
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
+    background-color: var(--very-light-gray);
+}
+
+.cards .btn:hover {
+    background-color: transparent;
+    color: var(--very-light-gray);
+    border: 1px solid var(--very-light-gray);
+}
+
+.flex-container .orange-card {
+    background-color: var(--bright-orange);
+}
+
+.flex-container .orange-card .btn{
+    color: var(--bright-orange);
+}
+
+.flex-container .dark-cyan-card {
+    background-color: var(--dark-cyan);
+}
+
+.flex-container .dark-cyan-card .btn{
+    color: var(--dark-cyan);
+}
+
+.flex-container .very-dark-cyan-card {
+    background-color: var(--very-dark-cyan);
+}
+
+.flex-container .very-dark-cyan-card .btn{
+    color: var(--very-dark-cyan);
 }
 
 /* Grid Design Style */
