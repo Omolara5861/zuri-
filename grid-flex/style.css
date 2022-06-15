@@ -74,37 +74,46 @@ header nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .cards {
-    padding: 15px;
+    width: 280px;
+    height: 450px;
+    padding: 30px;
 }
 
 .cards h2 {
     font-family: var(--shoulders-display);
-    margin: 10px 0;
+    font-size: 35px;
+    margin: 25px 0;
     color: var(--very-light-gray);
     text-transform: uppercase;
 }
 
 .cards p {
     color: var(--transparent-white);
-    line-height: 15px;
+    line-height: 1.7;
     margin: 10px 0;
 }
 
 .cards .btn {
     text-transform: capitalize;
-    padding: 1rem 1.5rem;
+    font-weight: bold;
+    padding: .8rem 1.5rem;
     border-radius: 30px;
+    border: none;
     background-color: var(--very-light-gray);
+    margin-top: 50px;
 }
 
 .cards .btn:hover {
     background-color: transparent;
-    color: var(--very-light-gray);
+    color: var(--very-light-gray) !important;
     border: 1px solid var(--very-light-gray);
+    transition: all 0.5s;
 }
 
 .flex-container .orange-card {
