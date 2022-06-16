@@ -45,11 +45,11 @@ a {
 }
 a:hover , .active {
     border-radius: 7px;
-    background-color: orchid;
+    background-color: rgb(73, 19, 71);
 }
 /* Navbar */
 header {
-    background-color: rgb(73, 19, 71);
+    background-color: orchid;
     color: #fff;
     height: auto;
 }
@@ -145,36 +145,46 @@ header nav ul {
 }
 
 /* Grid Design Style */
+.grid-body {
+    background-color: rgb(26, 24, 24);
+}
+
 .grid-container{
     display: grid;
-    background-color: #2196F3;
-    padding: 10px;
+    background-color: #06121b;
+    padding: 10px 50px;
     width: 700px;
-    height: 700px;
+    height: 500px;
     margin: 100px auto;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
-.grid-item {
-        background-color: rgba(255, 255, 255, 0.8);
-        text-align: center;
-        padding: 20px;
-        font-size: 30px;
-}
 .grid-container .red-box{
     background-color: var(--red-box);
-
+    grid-column: 1/3;
+    grid-row: 1/3;
 }
 
 .grid-container .orange-box{
     background-color: var(--orange-box);
+    grid-column: 3/4;
+    grid-row: 1/3;
 }
 
 .grid-container .green-box{
     background-color: var(--green-box);
+    grid-column: 2/1;
+    grid-row: 3/5;
 }
 
-.grid-container .blue-box1, .blue-box2{
+.grid-container .bluebox1{
     background-color: var(--blue-box);
+    grid-column: 2/4;
+}
 
+.grid-container .bluebox2{
+    background-color: var(--blue-box);
+    grid-column: 2/4;
+    grid-row: 3/4;
 }
