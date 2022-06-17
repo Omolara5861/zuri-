@@ -42,10 +42,12 @@ a {
     margin: 5px;
     text-decoration: none;
     color: #fff;
+    transition: all 0.5s;
 }
 a:hover , .active {
     border-radius: 7px;
     background-color: rgb(73, 19, 71);
+    transition: all 0.5s;
 }
 /* Navbar */
 header {
