@@ -141,3 +141,38 @@ body {
     display: none;
 }
 
+/* Responsiveness (Mobile View) */
+@media (max-width: 575px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+    .container .content {
+        width: 320px;
+        text-align: center;
+        margin: 70px 0;
+    }
+    
+    .container .content h1{
+        font-size: 1.5rem;
+    }
+    
+    .container .form-wrapper {
+        width: 300px;
+        margin-left: 0;
+        margin-bottom: 70px;
+    }
+    
+    .container .form-wrapper form{
+        padding: 1.5rem;
+    }
+    
+    .container .form-wrapper form input{
+        padding: 1rem 1.1rem;
+        margin-bottom: .7rem;
+    }
+    
+    .container .form-wrapper form button {
+        padding: 1rem 1.1rem;
+    }
+}
