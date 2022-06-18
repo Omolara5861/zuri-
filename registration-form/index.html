@@ -6,9 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Registration Form</title>
 </head>
 <body>
-    
+    <main>
+        <div class="container">
+            <div class="content">
+                <h1>Learn to code by watching others</h1>
+                <p>See how experienced developers solve problems in real time. Watching scripted tutorial is great but understanding how developers think is invaluable</p>
+            </div>
+            <div class="form-wrapper">
+                <div class="offer">
+                    <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+                </div>
+                <form>
+                <input type="text" name="firstname" id="firstname" placeholder="First Name">
+                <div class="error-state">
+                    <img src="images/icon-error.svg" alt="">
+                    <span class="msg">
+                        First Name cannot be empty
+                    </span>
+                </div>
+                <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+                <div class="error-state">
+                    <img src="images/icon-error.svg" alt="">
+                    <span class="msg">
+                        Last Name cannot be empty
+                    </span>
+                </div>
+                <input type="email" name="email" id="email" placeholder="Email Address">
+                <div class="error-state">
+                    <img src="images/icon-error.svg" alt="">
+                    <span class="msg">
+                        Looks like this is not an email 
+                    </span>
+                </div>
+                <input type="password" name="password" id="password" placeholder="Password">
+                <div class="error-state">
+                    <img src="images/icon-error.svg" alt="">
+                    <span class="msg">
+                        Password cannot be empty
+                    </span>
+                </div>
+                <button type="submit">Claim your free trial</button>
+                <p class="confirmation">By clicking the button you are agreeing to our <a href="#">Terms and Service</a></p>
+                </form>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
