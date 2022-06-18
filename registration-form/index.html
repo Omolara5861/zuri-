@@ -23,40 +23,38 @@
                 <div class="offer">
                     <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
                 </div>
-                <form>
-                <input type="text" name="firstname" id="firstname" placeholder="First Name">
-                <div class="error-state">
+                <form id="form">
+                <div class="form-control">
+                    <input type="text" name="firstname" id="firstname" placeholder="First Name">
                     <img src="images/icon-error.svg" alt="">
-                    <span class="msg">
-                        First Name cannot be empty
-                    </span>
+                    <small class="msg"></small>
                 </div>
-                <input type="text" name="lastname" id="lastname" placeholder="Last Name">
-                <div class="error-state">
+             
+                <div class="form-control">
+                    <input type="text" name="lastname" id="lastname" placeholder="Last Name">
                     <img src="images/icon-error.svg" alt="">
-                    <span class="msg">
-                        Last Name cannot be empty
-                    </span>
+                    <small class="msg"></small>
                 </div>
-                <input type="email" name="email" id="email" placeholder="Email Address">
-                <div class="error-state">
+
+                <div class="form-control">
+                    <input type="email" name="email" id="email" placeholder="Email Address">
                     <img src="images/icon-error.svg" alt="">
-                    <span class="msg">
-                        Looks like this is not an email 
-                    </span>
+                    <small class="msg"></small>
                 </div>
-                <input type="password" name="password" id="password" placeholder="Password">
-                <div class="error-state">
+
+                <div class="form-control">
+                    <input type="password" name="password" id="password" placeholder="Password">
                     <img src="images/icon-error.svg" alt="">
-                    <span class="msg">
-                        Password cannot be empty
-                    </span>
+                    <small class="msg"></small>
                 </div>
+                
                 <button type="submit">Claim your free trial</button>
                 <p class="confirmation">By clicking the button you are agreeing to our <a href="#">Terms and Service</a></p>
                 </form>
             </div>
         </div>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
