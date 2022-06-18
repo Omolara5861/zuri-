@@ -64,8 +64,7 @@ body {
     border-radius: 10px;
     margin-bottom: 20px;
     font-size: 14px;
-    box-shadow: 0px 7px 0px var(--dark-blue);
-}
+box-shadow: 0px 5px 3px rgb(0 0 0 / 30%);}
 
 .container .form-wrapper .offer span {
     color: #fff;
@@ -77,8 +76,7 @@ body {
     background-color: #fff;
     padding: 3rem;
     border-radius: 10px;
-    box-shadow: 0px 7px 0px var(--dark-blue);
-}
+box-shadow: 0px 5px 3px rgb(0 0 0 / 30%);}
 
 .container .form-wrapper form input{
     width: 100%;
