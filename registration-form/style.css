@@ -83,7 +83,7 @@ body {
 .container .form-wrapper form input{
     width: 100%;
     padding: 1rem 1.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: .9rem;
     border-radius: 5px;
     border: 1px solid rgb(224, 220, 220);
     font-weight: bold;
@@ -123,25 +123,21 @@ body {
     text-decoration: none;
 }
 
-/* Error States */
-/* .error-state {
+.form-control {
     position: relative;
+    margin-bottom: 7px;
     text-align: right;
 }
-.error-state img{
-    display: block; 
-    position: absolute;
-    top: -53px;
-    right: 20px;
+
+.form-control.error {
+    margin-bottom: 18px;
 }
-.error-state .msg {
-} */
 
 .form-control img {
 	visibility: hidden;
 	position: absolute;
-	top: 40px;
-	right: 10px;
+	top: 13px;
+	right: 25px;
 }
 
 .form-control.error img {
@@ -149,15 +145,15 @@ body {
 }
 
 .form-control small {
+    display: block;
+    font-style: italic;
     color: var(--red);
-	position: absolute;
-	bottom: 0;
-	left: 0;
 	visibility: hidden;
 }
 
 .form-control.error small {
 	visibility: visible;
+    margin-top: -10px;
 }
 
 /* Responsiveness (Mobile View) */
