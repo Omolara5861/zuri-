@@ -6,6 +6,8 @@ Enter Operator:`);
 let secondNumber = prompt('Enter Second Number:');
 let expression = `${firstNumber} ${operator} ${secondNumber}`;
 let output;
+let validOperator ;
+let validNumber;
 
 function calculate() {
 
@@ -25,6 +27,7 @@ function calculate() {
             output = Number(firstNumber) * Number(secondNumber);
             break;
     }
-    alert(`${expression} = ${output}`);
+    alert(`Result:
+    ${expression} = ${output}`);
 }
 calculate();
