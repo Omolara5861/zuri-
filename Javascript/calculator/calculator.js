@@ -6,8 +6,6 @@ Enter Operator:`);
 let secondNumber = prompt('Enter Second Number:');
 let expression = `${firstNumber} ${operator} ${secondNumber}`;
 let output;
-let validOperator ;
-let validNumber;
 
 function calculate() {
 
