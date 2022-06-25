@@ -9,6 +9,7 @@ let output;
 
 function calculate() {
 
+    if(operator === '+' || operator === '-' || operator === '/'|| operator === '*') {
     switch (operator) {
         case '+':
             output = Number(firstNumber) + Number(secondNumber);
@@ -26,6 +27,11 @@ function calculate() {
             break;
     }
     alert(`Result:
-    ${expression} = ${output}`);
+    ${expression} = ${output}
+Note: Refresh page to perform another calculation.`);
+    }
+    else {
+        alert(operator + ' is not  valid a operator');
+    }
 }
 calculate();
